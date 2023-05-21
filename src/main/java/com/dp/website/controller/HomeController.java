@@ -10,6 +10,7 @@ public class HomeController {
     @RequestMapping(value={"", "/", "/home"})
     public String displayHomePage(Model model) {
         model.addAttribute("user", "Person");
+        System.out.println("Controlled home");
         return "home.html";
     }
 }

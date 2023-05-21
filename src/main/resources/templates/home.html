@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="assets/css/style-starter.css">
 </head>
 <body>
-    <div th:replace="header :: header"></div>
+    <div th:replace="~{header :: header}"></div>
     <a th:href="@{/page1}">Page One</a>
-    <div th:replace="footer :: footer"></div>
+    <div th:replace="~{footer :: footer}"></div>
 </body>
 </html>
