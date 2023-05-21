@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Page 1</title>
 </head>
 <body>
-    <h1>Page One</h1>
-    <a href="home.html">Home</a>
+    <div th:replace="header :: header"></div>
+    <a href="home">Home</a>
+    <div th:replace="footer :: footer"></div>
 </body>
 </html>
